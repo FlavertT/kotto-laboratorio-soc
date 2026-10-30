@@ -1,0 +1,407 @@
+[
+  {
+    "id": 5,
+    "defense": true,
+    "measurements": [
+      {
+        "timestamp": "2026-10-29T20:57:44.975867+00:00",
+        "temperature": 3.0,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:45.983298+00:00",
+        "temperature": 3.0,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:47.026546+00:00",
+        "temperature": 3.03,
+        "setpoint": 4.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:48.033489+00:00",
+        "temperature": 3.12,
+        "setpoint": 4.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:49.108208+00:00",
+        "temperature": 3.24,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:50.152999+00:00",
+        "temperature": 3.22,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:51.160020+00:00",
+        "temperature": 3.2,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:52.198100+00:00",
+        "temperature": 3.18,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:53.207937+00:00",
+        "temperature": 3.16,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:54.225865+00:00",
+        "temperature": 3.15,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:55.251900+00:00",
+        "temperature": 3.13,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:56.274392+00:00",
+        "temperature": 3.12,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:57.292616+00:00",
+        "temperature": 3.11,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:58.316235+00:00",
+        "temperature": 3.1,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:59.345008+00:00",
+        "temperature": 3.09,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:00.369442+00:00",
+        "temperature": 3.08,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:01.396482+00:00",
+        "temperature": 3.07,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:02.427938+00:00",
+        "temperature": 3.06,
+        "setpoint": 3.0
+      }
+    ],
+    "alerts": [
+      {
+        "timestamp": "2026-10-29T20:57:49.089628+00:00",
+        "rule": "Cambio sin autorizaci\u00f3n",
+        "event_time": "2026-10-29T20:57:48.817985+00:00"
+      }
+    ],
+    "evidence": [
+      {
+        "name": "controller.jsonl",
+        "sha256": "d4b80e8f420cc45cb9e576e4cea275ce9edfb235489c5e22c63112aed03411a4",
+        "verified": true
+      },
+      {
+        "name": "traffic.pcap",
+        "sha256": "e5db7f174687e974f9f9f30968caa3c6926cd401878817e795208a66a31d7cd6",
+        "verified": true
+      },
+      {
+        "name": "results.json",
+        "sha256": "fe8479b5ed6b557a2f26e345acedb2d10077e084d8119597139f060f835591e1",
+        "verified": true
+      },
+      {
+        "name": "tcpdump.log",
+        "sha256": "43496716ecff1ee497d42433fe232706a94f868057ba5e625935b888472edd39",
+        "verified": true
+      }
+    ],
+    "actions": [
+      {
+        "action": "contain",
+        "success": true,
+        "timestamp": "2026-10-29T20:57:49.093757+00:00"
+      },
+      {
+        "action": "recover",
+        "success": true,
+        "timestamp": "2026-10-29T20:57:49.102561+00:00"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "defense": true,
+    "measurements": [
+      {
+        "timestamp": "2026-10-29T20:57:56.566526+00:00",
+        "temperature": 3.0,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:57.572930+00:00",
+        "temperature": 3.0,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:58.634965+00:00",
+        "temperature": 3.03,
+        "setpoint": 4.0
+      },
+      {
+        "timestamp": "2026-10-29T20:57:59.642213+00:00",
+        "temperature": 3.12,
+        "setpoint": 4.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:00.729307+00:00",
+        "temperature": 3.58,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:01.769458+00:00",
+        "temperature": 3.52,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:02.776759+00:00",
+        "temperature": 3.47,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:03.839876+00:00",
+        "temperature": 3.42,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:04.849360+00:00",
+        "temperature": 3.38,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:05.880701+00:00",
+        "temperature": 3.34,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:06.891841+00:00",
+        "temperature": 3.31,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:07.907298+00:00",
+        "temperature": 3.28,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:08.924720+00:00",
+        "temperature": 3.25,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:09.960551+00:00",
+        "temperature": 3.23,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:10.995419+00:00",
+        "temperature": 3.21,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:12.003533+00:00",
+        "temperature": 3.19,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:13.032074+00:00",
+        "temperature": 3.17,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:14.057496+00:00",
+        "temperature": 3.15,
+        "setpoint": 3.0
+      }
+    ],
+    "alerts": [
+      {
+        "timestamp": "2026-10-29T20:58:00.709992+00:00",
+        "rule": "Cambio sin autorizaci\u00f3n",
+        "event_time": "2026-10-29T20:58:00.418695+00:00"
+      }
+    ],
+    "evidence": [
+      {
+        "name": "controller.jsonl",
+        "sha256": "95b6595e01a87be47d78d44e7a41994eff1159c3920f4256db85decb1f49afd2",
+        "verified": true
+      },
+      {
+        "name": "traffic.pcap",
+        "sha256": "a1ef1e51214d6cda47f57565c42f50d1df5fc74ae3dc2b985126a82db5d2f136",
+        "verified": true
+      },
+      {
+        "name": "results.json",
+        "sha256": "3a7c1a0b52da9092347c9090e29b16f20bc8a46c7b89f1859eadf82b60ed6ba4",
+        "verified": true
+      },
+      {
+        "name": "tcpdump.log",
+        "sha256": "43496716ecff1ee497d42433fe232706a94f868057ba5e625935b888472edd39",
+        "verified": true
+      }
+    ],
+    "actions": [
+      {
+        "action": "contain",
+        "success": true,
+        "timestamp": "2026-10-29T20:58:00.714020+00:00"
+      },
+      {
+        "action": "recover",
+        "success": true,
+        "timestamp": "2026-10-29T20:58:00.723291+00:00"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "defense": false,
+    "measurements": [
+      {
+        "timestamp": "2026-10-29T20:58:06.089864+00:00",
+        "temperature": 3.0,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:07.097260+00:00",
+        "temperature": 3.0,
+        "setpoint": 3.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:08.167090+00:00",
+        "temperature": 3.03,
+        "setpoint": 4.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:09.174888+00:00",
+        "temperature": 3.12,
+        "setpoint": 4.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:10.239938+00:00",
+        "temperature": 3.25,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:11.247456+00:00",
+        "temperature": 3.44,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:12.264756+00:00",
+        "temperature": 3.61,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:13.333422+00:00",
+        "temperature": 3.78,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:14.343359+00:00",
+        "temperature": 3.92,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:15.380865+00:00",
+        "temperature": 4.05,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:16.405284+00:00",
+        "temperature": 4.17,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:17.414261+00:00",
+        "temperature": 4.27,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:18.431076+00:00",
+        "temperature": 4.37,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:19.452384+00:00",
+        "temperature": 4.45,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:20.491049+00:00",
+        "temperature": 4.53,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:21.515462+00:00",
+        "temperature": 4.6,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:22.542515+00:00",
+        "temperature": 4.66,
+        "setpoint": 5.0
+      },
+      {
+        "timestamp": "2026-10-29T20:58:23.560508+00:00",
+        "temperature": 4.72,
+        "setpoint": 5.0
+      }
+    ],
+    "alerts": [
+      {
+        "timestamp": "2026-10-29T20:58:10.236201+00:00",
+        "rule": "Cambio sin autorizaci\u00f3n",
+        "event_time": "2026-10-29T20:58:09.934596+00:00"
+      },
+      {
+        "timestamp": "2026-10-29T20:58:13.323647+00:00",
+        "rule": "Cambio sin autorizaci\u00f3n",
+        "event_time": "2026-10-29T20:58:12.935687+00:00"
+      }
+    ],
+    "evidence": [
+      {
+        "name": "controller.jsonl",
+        "sha256": "ba3426358a6ff8f9f4bf403305a47bf2ac06a01b65a74dad53aa7bbaf037616c",
+        "verified": true
+      },
+      {
+        "name": "traffic.pcap",
+        "sha256": "9578a698ab3eb72ff415656015c3c52ca7795c558f816e52c06f819495fc211e",
+        "verified": true
+      },
+      {
+        "name": "results.json",
+        "sha256": "cd38d7af2f94ffcf31ebc76f3baf89203c87564c40c9ad0d6a9dbb1988c09d84",
+        "verified": true
+      },
+      {
+        "name": "tcpdump.log",
+        "sha256": "3d163320cad77f9eced486d06ecb5a2333409770772fe88b2f0c0744af7e94fb",
+        "verified": true
+      }
+    ],
+    "actions": []
+  }
+]

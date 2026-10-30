@@ -54,3 +54,39 @@ class ParameterChangeAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         obj.recorded_by = request.user
         super().save_model(request, obj, form, change)
+
+from .models import Experiment, ControllerEvent, ResponseAction
+
+class ReadOnlyAuditAdmin(admin.ModelAdmin):
+    def has_add_permission(self, request): return False
+    def has_change_permission(self, request, obj=None): return False
+    def has_delete_permission(self, request, obj=None): return False
+
+@admin.register(Experiment)
+class ExperimentAdmin(ReadOnlyAuditAdmin):
+    list_display = ['id', 'case', 'refrigerator', 'seed', 'defense', 'status', 'started_at', 'report_link']
+    def report_link(self, obj):
+        from django.urls import reverse
+        from django.utils.html import format_html
+        return format_html('<a href="{}">Descargar informe</a>', reverse('experiment-report', args=[obj.pk]))
+    report_link.short_description = 'Informe'
+
+@admin.register(ControllerEvent)
+class ControllerEventAdmin(ReadOnlyAuditAdmin):
+    list_display = ['experiment', 'sequence', 'occurred_at', 'kind']
+    list_filter = ['experiment', 'kind']
+
+@admin.register(ResponseAction)
+class ResponseActionAdmin(ReadOnlyAuditAdmin):
+    list_display = ['event', 'occurred_at', 'actor', 'action', 'success']
+
+from .models import ChangeAuthorization
+@admin.register(ChangeAuthorization)
+class ChangeAuthorizationAdmin(admin.ModelAdmin):
+    list_display = ['experiment', 'username', 'setpoint', 'defrost_minutes', 'valid_until', 'approved_by', 'consumed_by']
+    readonly_fields = ['approved_by', 'created_at', 'consumed_by']
+    def has_change_permission(self, request, obj=None): return obj is None
+    def has_delete_permission(self, request, obj=None): return False
+    def save_model(self, request, obj, form, change):
+        obj.approved_by = request.user
+        super().save_model(request, obj, form, change)

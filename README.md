@@ -2,7 +2,7 @@
 
 Prototipo académico en desarrollo para el trabajo final grupal de la Diplomatura en Ciberseguridad Aplicada. Autores: Ignacio Echave, Amparo Rodriguez y Flavio Sistro.
 
-Python representa un PLC simulado dentro de una maqueta; no reproduce íntegramente un equipo industrial. Actualmente incluye Django, SQL (SQLite), gestión de registros y simulación local. La comunicación de red, captura PCAP y defensa activa están pendientes.
+Python representa un PLC simulado dentro de una maqueta; no reproduce íntegramente un equipo industrial. Actualmente incluye Django, SQL (SQLite), gestión de registros y simulación local. La etapa conectada incorpora comunicación HTTP en red aislada, captura PCAP real, monitoreo y respuesta automática. Ver [instrucciones del laboratorio conectado](lab/README.md).
 
 El repositorio no incluye la base local, usuarios, contraseñas, evidencias ni capturas de tráfico.
 El SOC participa mediante alertas, casos, línea temporal y registro de actuaciones de custodia.
@@ -71,6 +71,8 @@ python manage.py createsuperuser
 
 Esta configuración es de desarrollo local (DEBUG habilitado y clave local). No desplegarla públicamente.
 
-## Próxima etapa del laboratorio
+## Laboratorio conectado y respuesta
 
-Pendientes: controlador con acceso autenticado y sesiones; estaciones de administración y atacante en red aislada; adquisición PCAP real del experimento; monitoreo continuo; contención y recuperación documentadas; permisos por rol SOC; vincular evidencias con los eventos y generar informe. Esta primera base no ejecuta ataques ni controla dispositivos reales.
+Ver [lab/README.md](lab/README.md) para ejecutar estaciones lógicas aisladas, comparar con y sin defensa, revisar permisos SOC y generar informes. El simulador anterior permanece como ejemplo local independiente.
+
+Pendientes para una versión de mayor alcance: TLS, persistencia del estado del PLC, supervisión y reintentos del monitor, segmentación entre estaciones y almacenamiento de auditoría resistente a modificaciones. Las autorizaciones previas de un solo uso ya permiten detectar cambios dentro de rango sin aprobación.

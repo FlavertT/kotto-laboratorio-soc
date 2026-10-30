@@ -12,3 +12,6 @@ runs/
 *.pcapng
 *.pem
 *.key
+
+output/
+tmp/
